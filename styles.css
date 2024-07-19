@@ -30,10 +30,21 @@ header {
 }
 
 
-.container {
-    display: flex;
-    justify-content: space-between;
-      } 
+.flex-container {
+            display: flex;
+            justify-content: space-between; /* Distribuye el espacio entre los contenedores */
+            flex-wrap: wrap; /* Permite que los contenedores se ajusten en múltiples líneas si es necesario */
+        }
+        .container {
+            flex: 1; /* Cada contenedor toma un espacio igual */
+            min-width: 150px; /* Mínimo ancho de cada contenedor */
+            margin: 10px; /* Espacio alrededor de cada contenedor */
+            text-align: center; /* Centra el texto dentro de cada contenedor */
+            background-color: #f0f0f0; /* Color de fondo para visualización */
+            padding: 10px; /* Relleno interno del contenedor */
+            box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Sombra alrededor del contenedor */
+            border-radius: 8px; /* Bordes redondeados */
+        }
 
 /* Estilos para la barra de navegación */
 nav ul {
